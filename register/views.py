@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status 
 from rest_framework.views import APIView
 from .serializers import UserSerializer
+from .emails import send_otp
 
 # Create your views here.
 
@@ -13,6 +14,7 @@ class RegisterView(APIView):
             serializer = UserSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
+                send_otp(serializer.data['email'])
                 return Response({
                     'data': serializer.data,
                     'message':'Account created. Check your email for OTP'
