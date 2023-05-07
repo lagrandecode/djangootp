@@ -128,7 +128,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SERVER_EMAIL = 'lagosjudiciarytemplate@gmail.com'
+SERVER_EMAIL = 'enter here'
 
 EMAIL_HOST = 'smtp.gmail.com'
 
@@ -136,6 +136,6 @@ EMAIL_USE_TLS = True
 
 EMAIL_PORT = 587
 
-EMAIL_HOST_USER = 'seunogunmolufirst1@gmail.com'
+EMAIL_HOST_USER = 'enter here'
 
-EMAIL_HOST_PASSWORD = 'hivzcbgozlarlppl'
+EMAIL_HOST_PASSWORD = 'enter here'

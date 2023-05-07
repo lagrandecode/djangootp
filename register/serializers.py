@@ -8,6 +8,6 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['email','password','isVerified']
 
 
-class VerifySerializer(serializers.Serializers):
+class VerifySerializer(serializers.Serializer):
     email = serializers.EmailField()
     otp = serializers.CharField()
